@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    tools:context=".main.fragments.AboutUsFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dirty_blue"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/_80sdp"
+        android:paddingTop="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="About Us"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAboutUs"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFounders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="- Founders -"
+                android:textColor="@color/dirty_blue"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/rlFounders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFounders"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_120sdp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/im_joe" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv1"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:text="Mr.Joe kevin"
+                            android:textColor="@color/dirty_blue"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/_2sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_120sdp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/im_subash" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv2"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:text="Mr.Subash Sk"
+                            android:textColor="@color/dirty_blue"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/_2sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv3"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_120sdp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/im_anushag" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv3"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:text="Mr.Anushagh Shaji"
+                            android:textColor="@color/dirty_blue"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <RelativeLayout
+                android:id="@+id/rlFounders2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlFounders"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv1"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv4"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_120sdp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/im_shanish" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv4"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:text="Mr.Mohammed Shanish"
+                            android:textColor="@color/dirty_blue"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/cv1"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv5"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_120sdp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/im_faheem" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv5"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:text="Mr.Faheem Mashoor"
+                            android:textColor="@color/dirty_blue"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlFounders2"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/appCompatCheckedTextView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:drawableStart="@drawable/ic_baseline_email_24"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:drawableTint="@color/dirty_blue"
+                        android:fontFamily="@font/poppins"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/contact_us_via_mail"
+                        android:textColor="@color/dirty_blue" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/appCompatCheckedTextView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:drawableStart="@drawable/ic_baseline_phone_24"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:drawableTint="@color/dirty_blue"
+                        android:fontFamily="@font/poppins"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/contact_directly"
+                        android:textColor="@color/dirty_blue" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_5sdp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/appCompatCheckedTextView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:drawableStart="@drawable/ic_baseline_category_24"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:drawableTint="@color/dirty_blue"
+                        android:fontFamily="@font/poppins"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/tied_up_branch"
+                        android:textColor="@color/dirty_blue" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvAvailable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="@dimen/_50sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:text="@string/dash_string"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+</RelativeLayout>

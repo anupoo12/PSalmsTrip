@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    tools:context=".auth.fragments.LoginFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_auth_shape" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appCompatImageView"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="@string/welcome_back"
+        android:textColor="@color/light_black"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_below="@+id/tv_welcome"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:src="@drawable/im_login" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lv_email"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:background="@drawable/et_bg">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_email"
+            style="@style/et_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:drawableTint="@color/white"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="@string/enter_your_email"
+            android:inputType="textPersonName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lv_password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/lv_email"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/et_bg"
+        app:layout_constraintTop_toBottomOf="@+id/lv_email">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_password"
+            style="@style/et_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawableTint="@color/white"
+            android:drawablePadding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@null"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv_password"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/poppins"
+        android:gravity="end"
+        android:text="@string/forget_password"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_log_in"
+        app:layout_constraintTop_toBottomOf="@+id/lv_password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_log_in"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_forget_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/poppins_bold"
+        android:padding="@dimen/_9sdp"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_dont_have_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_log_in"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:alpha="0.8"
+        android:gravity="center"
+        android:text="@string/reg_string"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</RelativeLayout>

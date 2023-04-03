@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="100dp"
+    tools:context=".main.fragments.PrivacyFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Introduction"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We respect your privacy and are committed to protecting your personal information. This privacy policy explains how we collect, use, and disclose your personal information in connection with our mobile application (the Diagnozer)."
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Information We Collect"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We collect the following types of personal information:
+
+Contact information, such as your name and email address.
+Usage data, such as how you interact with the App, the pages you view, and the features you use.
+Device information, such as your IP address, browser type, and operating system.
+Geolocation data, such as your city or postal code.
+How We Use Your Information
+We use your personal information for the following purposes:
+
+To provide and maintain the App.
+To communicate with you about the App, including customer service inquiries and notifications about updates and new features.
+To personalize your experience with the App.
+To conduct research and analytics to improve the App and our services.
+Information Sharing and Disclosure
+We may share your personal information with third-party service providers who perform services on our behalf, such as data analysis and marketing. We may also share your information with our business partners to offer you joint promotions or products.
+
+We may disclose your personal information to comply with applicable laws, regulations, legal processes, or government requests. We may also disclose your information in connection with investigations or potential legal claims."
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Choices and Control"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You may review, update, or delete your personal information by contacting us at [insert contact information]. You may also opt out of receiving marketing emails by following the instructions in the email."
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Security"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We take reasonable measures to protect your personal information from unauthorized access, disclosure, or misuse. However, no security system is completely foolproof, and we cannot guarantee the security of your information."
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Changes to This Policy"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We may update this privacy policy from time to time by posting a new version on the App. We will notify you of any material changes to this policy by email or through the App."
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you have any questions or concerns about this privacy policy, please contact us at [insert contact information]."
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

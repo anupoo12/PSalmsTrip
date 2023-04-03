@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.fragments.LanguageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <CheckBox
+        android:id="@+id/my_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layoutDirection="rtl"
+        android:text="English (US)"
+        android:button="@null"
+        android:drawableRight="@drawable/baseline_check_box_24"
+        android:layout_marginTop="70dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:enabled="false"
+        android:textSize="20dp"
+        />
+
+</FrameLayout>

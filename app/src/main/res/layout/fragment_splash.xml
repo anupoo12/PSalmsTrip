@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_gray"
+    tools:context=".auth.fragments.SplashFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_auth_shape" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/appCompatImageView2"
+        android:layout_below="@+id/appCompatImageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_30sdp">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/im_splash" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView14"
+        android:layout_below="@+id/appCompatImageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/poppins_bold"
+        android:textColor="@color/light_black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:text="FACING AN ISSUE WITH\nYOUR CAR?" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="@font/poppins"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/light_black"
+        android:text="You have come to the right place,we will provide you with all possible solution completely hassle free.(24/7)" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_get_started"
+        android:layout_alignParentBottom="true"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/poppins_semibold"
+        android:padding="@dimen/_9sdp"
+        android:text="GET STARTED"
+       android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="@dimen/_50sdp" />
+
+</RelativeLayout>

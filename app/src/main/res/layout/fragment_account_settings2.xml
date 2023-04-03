@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.fragments.AccountSettings">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Change account details"
+        android:id="@+id/user_settings"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        android:layout_marginHorizontal="@dimen/_16sdp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/as_lv_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/et_bg"
+        app:layout_constraintTop_toBottomOf="@+id/user_settings">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/as_et_full_name"
+            style="@style/et_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawableTint="@color/white"
+            android:drawablePadding="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@null"
+            android:hint="@string/enter_your_full_name"
+            android:inputType="textPersonName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/as_lv_email"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/et_bg"
+        app:layout_constraintTop_toBottomOf="@+id/as_lv_full_name">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/as_et_email"
+            style="@style/et_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawableTint="@color/white"
+            android:drawablePadding="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@null"
+            android:hint="@string/enter_your_email"
+            android:inputType="textPersonName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/as_btn_register"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_20sdp"
+    android:layout_marginTop="400dp"
+    android:layout_marginBottom="34dp"
+    android:background="@drawable/btn_bg"
+    android:padding="@dimen/_9sdp"
+    android:text="Submit"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/as_btn_newpass"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:background="@drawable/btn_new"
+        android:padding="@dimen/_9sdp"
+        android:text="Change password"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/as_btn_register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</RelativeLayout>

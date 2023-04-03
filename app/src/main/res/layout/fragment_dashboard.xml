@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    tools:context=".main.fragments.DashboardFragment">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/ic_rectangle_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_shape_circle_opacity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_dash_welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_account_circle_24" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_dash_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Welcome Christina Albert"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <RelativeLayout
+            android:id="@+id/rlFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFaq"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_90sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_10sdp"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_faq"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/faq"
+                        android:layout_centerHorizontal="true"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_below="@+id/iv_faq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:fontFamily="sans-serif-black"
+                        android:text="Ask Us"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/dirty_blue" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvReportProblem"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_90sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_10sdp"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/diagnose"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_below="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diagnose problem"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/dirty_blue"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlSeconds"
+            android:layout_below="@+id/rlFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvAboutUs"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_90sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_10sdp"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_about_us"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerHorizontal="true"
+                        app:srcCompat="@drawable/about_us" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_below="@+id/iv_about_us"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="About Us"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/dirty_blue" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvLocateUs"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_90sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_10sdp"
+                    android:gravity="center">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_locate_us"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                       android:layout_centerHorizontal="true"
+                        app:srcCompat="@drawable/locate_us" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_below="@+id/iv_locate_us"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Locate Us"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/dirty_blue"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_50sdp"
+        android:layout_marginVertical="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="@string/dash_string"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

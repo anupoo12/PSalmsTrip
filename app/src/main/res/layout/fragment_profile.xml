@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_gray"
+    tools:context=".main.fragments.ProfileFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dirty_blue"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:paddingTop="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="Profile Settings"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <View
+        android:id="@+id/view0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/dirty_blue"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawableStart="@drawable/ic_acc_setting"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableTint="@color/dirty_blue"
+        android:fontFamily="@font/poppins"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        android:text="Account Settings"
+        android:textColor="@color/dirty_blue"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/view0" />
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/dirty_blue"
+        android:layout_marginVertical="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_acc_language"
+        android:drawableTint="@color/dirty_blue"
+        android:drawablePadding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/poppins"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        android:text="Language"
+        android:textColor="@color/dirty_blue"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/dirty_blue"
+        android:layout_marginVertical="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawableTint="@color/dirty_blue"
+        android:drawableStart="@drawable/ic_acc_policy"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        android:text="Privacy policy"
+        android:textColor="@color/dirty_blue"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/dirty_blue"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawableTint="@color/dirty_blue"
+        android:drawableStart="@drawable/ic_acc_report"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        android:text="Report a problem"
+        android:textColor="@color/dirty_blue"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/dirty_blue"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:text="Logout"
+        android:drawableStart="@drawable/ic_baseline_logout_24"
+        android:drawableTint="@color/dirty_blue"
+        android:textColor="@color/dirty_blue"
+        android:textSize="17sp"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/dirty_blue"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_logout" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_50sdp"
+        android:layout_marginVertical="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="parent"  >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="@string/dash_string"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

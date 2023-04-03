@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_navigation"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.dev.psalmstrip.main.fragments.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_FAQFragment"
+            app:destination="@id/FAQFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_locateUsFragment"
+            app:destination="@id/locateUsFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_aboutUSFragment"
+            app:destination="@id/aboutUSFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_voiceFragment"
+            app:destination="@id/voiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diagnozarPointsFragment"
+        android:name="com.dev.psalmstrip.main.fragments.DiagnozarPointsFragment"
+        android:label="fragment_diagnozar_points_"
+        tools:layout="@layout/fragment_diagnozar_points" />
+    <fragment
+        android:id="@+id/FAQFragment"
+        android:name="com.dev.psalmstrip.main.fragments.FAQFragment"
+        android:label="fragment_f_a_q"
+        tools:layout="@layout/fragment_f_a_q" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.dev.psalmstrip.main.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/locateUsFragment"
+        android:name="com.dev.psalmstrip.main.fragments.LocateUsFragment"
+        android:label="fragment_locate_us"
+        tools:layout="@layout/fragment_locate_us" />
+    <fragment
+        android:id="@+id/aboutUSFragment"
+        android:name="com.dev.psalmstrip.main.fragments.AboutUsFragment"
+        android:label="fragment_about_u_s"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.dev.psalmstrip.main.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/voiceFragment"
+        android:name="com.dev.psalmstrip.main.fragments.VoiceFragment"
+        android:label="fragment_voice"
+        tools:layout="@layout/fragment_voice" />
+    <fragment
+        android:id="@+id/diagnoseFragment"
+        android:name="com.dev.psalmstrip.main.fragments.DiagnoseFragment"
+        android:label="fragment_diagnose"
+        tools:layout="@layout/fragment_diagnose" />
+    <fragment
+        android:id="@+id/obdFragment"
+        android:name="com.dev.psalmstrip.main.fragments.OBDFragment"
+        android:label="fragment_obd"
+        tools:layout="@layout/fragment_o_b_d" />
+    <fragment
+        android:id="@+id/accountSettings"
+        android:name="com.dev.psalmstrip.main.fragments.AccountSettings"
+        android:label="account_settings"
+        tools:layout="@layout/fragment_account_settings2" />
+
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.dev.psalmstrip.main.fragments.LanguageFragment"
+        android:label="language_fragment"
+        tools:layout="@layout/fragment_language" />
+
+    <fragment
+        android:id="@+id/ReportFragment"
+        android:name="com.dev.psalmstrip.main.fragments.ReportProblemFragment"
+        android:label="report_problem_fragment"
+        tools:layout="@layout/fragment_report_problem" />
+    <fragment
+        android:id="@+id/PrivacyFragment"
+        android:name="com.dev.psalmstrip.main.fragments.PrivacyFragment"
+        android:label="privacy_fragment"
+        tools:layout="@layout/fragment_privacy" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.dev.psalmstrip.main.fragments.videoFragment"
+        android:label="video_fragment"
+        tools:layout="@layout/fragment_video" />
+</navigation>

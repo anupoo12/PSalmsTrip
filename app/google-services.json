@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "347681706469",
+    "project_id": "psalms-trip",
+    "storage_bucket": "psalms-trip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347681706469:android:0a5151b06192b695dcdf0c",
+        "android_client_info": {
+          "package_name": "com.dev.psalmstrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347681706469-q9h5n8sag5sdcqck9dauoj59s62sf4i6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.psalmstrip",
+            "certificate_hash": "2688ab30e55b0b6a26d8e032820d6c243c1c4bd4"
+          }
+        },
+        {
+          "client_id": "347681706469-nv8nb4uta5oev5btol5g920uv619ee32.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpvSAJOEQEzL0GuZpzN24jzdaroxpyL6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347681706469-nv8nb4uta5oev5btol5g920uv619ee32.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

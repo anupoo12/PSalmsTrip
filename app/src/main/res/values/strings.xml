@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PSalms Trip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="log_in">Log in</string>
+    <string name="welcome_onboard">Welcome Onboard!</string>
+    <string name="lets_help_you_to_get_started">Lets help you to get started</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="register">Register</string>
+    <string name="log_string" translatable="false">Already have an account? <b>Log in</b></string>
+    <!--    <string name="reg_string" translatable="false">Dont have an account ? <font fgcolor='#208F9E'>Register</font></string>-->
+    <string name="reg_string" translatable="false">Dont have an account? <b>Register</b></string>
+    <string name="dash_string" translatable="false">We are available    <font fgcolor='#FB0B0B'>24/7</font></string>
+    <string name="locate_us">We are available throughout Dubai,Sharjah and Ajman and will be planning to expand it to the maximum in the future so that every people could experience Diagnozar.</string>
+    <string name="got_a_question_feel_free_to_know">Got a question?\n Feel free to know</string>
+    <string name="contact_us_via_mail">Contact us via\nMail-:diagnozarobd123@gmail.com</string>
+    <string name="contact_directly">Contact directly to our office via Phone:-+971559776105</string>
+    <string name="tied_up_branch">Tied up branches:-...coming soon....</string>
+</resources>
